@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3150911845811064159}
   - component: {fileID: 3150911845811064129}
   - component: {fileID: 3150911845811064135}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Water
   m_TagString: Water
   m_Icon: {fileID: 0}
@@ -158,7 +158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3150911846579541754}
   - component: {fileID: 3150911846579541753}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WaterSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4077195242771027544}
   - component: {fileID: 4077195242771027545}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FireSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 4077195244073097146}
   - component: {fileID: 4077195244073097145}
   - component: {fileID: 4077195244073097144}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fire
   m_TagString: Fire
   m_Icon: {fileID: 0}
