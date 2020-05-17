@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class ButtonScript : MonoBehaviour
 {
-   public GameObject obstacle; //Препятствие, на котором висит скрипт с параметром objectsOnButtons
+    public GameObject Obstacle; //Препятствие, на которое влияет эта кнопка.
 
-   // Функции, которые изменяют параметр objectsOnButtons, когда кто-то заходит или выходит из зоны кнопки
-   private void OnTriggerEnter(Collider other)
-   {
-   	   obstacle.GetComponent<ObstacleScript>().objectsOnButtons+=1f;
-   }
+    // Методы, которые изменяют параметр количества объектов открывающих препятствие, когда кто-то наступает на кнопку.
+    private void OnTriggerEnter(Collider other)
+    {
+        Obstacle.GetComponent<ObstacleScript>().objectsOnButtons++;
+    }
 
-   private void OnTriggerExit(Collider other)
-   {
-   	   obstacle.GetComponent<ObstacleScript>().objectsOnButtons-=1f;
-   }
+    private void OnTriggerExit(Collider other)
+    {
+        Obstacle.GetComponent<ObstacleScript>().objectsOnButtons--;
+    }
 }
