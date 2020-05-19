@@ -21,8 +21,8 @@ TagManager:
   - 
   - PostProcessing
   - ColliderForFirePool
-  - Fire
-  - Water
+  - FirePlayer
+  - WaterPlayer
   - 
   - 
   - 

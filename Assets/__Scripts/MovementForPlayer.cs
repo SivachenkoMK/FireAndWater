@@ -122,12 +122,19 @@ public class MovementForPlayer
         }
     }
 
+    private bool NotForbidenToJumpFrom(GameObject Object)
+    {
+        if (!Object.CompareTag("Fire") && !Object.CompareTag("Water"))
+            return true;
+        return false;
+    }
+
     // Метод, проверяющий неходится ли персонаж на земле.
     private void IsGrounded()
     {
         ray = new Ray(Player.transform.position, DirectionDown);
-        Physics.Raycast(ray, out hit); 
-        if (hit.collider != null && hit.distance <= 0.4 + MaxDistance)
+        Physics.Raycast(ray, out hit);
+        if (hit.collider != null && hit.distance <= 0.4 + MaxDistance && NotForbidenToJumpFrom(hit.collider.gameObject))
             OnTheGround = true;
         else
             OnTheGround = false;

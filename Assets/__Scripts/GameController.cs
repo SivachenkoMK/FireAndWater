@@ -27,7 +27,7 @@ public class GameController : MonoBehaviour
     private void Awake()
     {
         FirstPlayer = Instantiate(FirstPlayerPrefab, FirstPlayerPosition, Quaternion.identity);
-        SecondPlayer = Instantiate(SecondPlayer, SecondPlayerPosition, Quaternion.identity);
+        SecondPlayer = Instantiate(SecondPlayerPrefab, SecondPlayerPosition, Quaternion.identity);
     }
     public void PauseGame()
     {
