@@ -5,9 +5,10 @@ using UnityEngine;
 public class Teleport : MonoBehaviour
 {
     [SerializeField]
-    private Vector3 Position;
+    public GameObject target; // В эту переменную помещаем пустой геймобджект, и присваиваем его позицию объекту, который зайдёт в триггер
+
     private void OnTriggerEnter(Collider other)
     {
-        other.gameObject.transform.position = Position;
+        other.gameObject.transform.position = target.transform.position;
     }
 }
