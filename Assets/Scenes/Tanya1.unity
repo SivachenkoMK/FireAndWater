@@ -2974,6 +2974,16 @@ PrefabInstance:
       propertyPath: LoseTablePrefab
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2274577433325248912, guid: 62cf797a79a03cc4e828a5ecb7cc97f4,
+        type: 3}
+      propertyPath: FirstPlayerDoor
+      value: 
+      objectReference: {fileID: 1818973830}
+    - target: {fileID: 2274577433325248912, guid: 62cf797a79a03cc4e828a5ecb7cc97f4,
+        type: 3}
+      propertyPath: SecondPlayerDoor
+      value: 
+      objectReference: {fileID: 799209315}
     - target: {fileID: 3255873767470327427, guid: 62cf797a79a03cc4e828a5ecb7cc97f4,
         type: 3}
       propertyPath: m_Name
@@ -3128,6 +3138,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 821430543793259642}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &799209317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799209315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7808b8dd52b53c740bff812d2d44c176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsOpened: 0
+  TagOfNeededObject: Water
 --- !u!4 &810289901 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8717806605113557804, guid: 44ab26dbdd705ac4480c01f2bda9dedf,
@@ -6085,12 +6109,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6214991139905368794, guid: f06f4da90134ded4989150af6d277b47,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7948277918645235861, guid: f06f4da90134ded4989150af6d277b47,
         type: 3}
       propertyPath: m_Name
       value: FireDoor
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4731239907419461105, guid: f06f4da90134ded4989150af6d277b47, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f06f4da90134ded4989150af6d277b47, type: 3}
 --- !u!1001 &1603676186
 PrefabInstance:
@@ -7081,7 +7111,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlatformUnderFireDoor
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114048243296995578, guid: ec9a380ef194c0c40a7f046a38dbca00, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ec9a380ef194c0c40a7f046a38dbca00, type: 3}
 --- !u!1001 &1806150563
 PrefabInstance:
@@ -7252,6 +7283,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1586655369}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1818973832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818973830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7808b8dd52b53c740bff812d2d44c176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsOpened: 0
+  TagOfNeededObject: Fire
 --- !u!1 &1830991313
 GameObject:
   m_ObjectHideFlags: 0
@@ -8206,7 +8251,13 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 51
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6100706777727159803, guid: cb19ebe993f78594180b3ba159fb6be6,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7732326832029709187, guid: cb19ebe993f78594180b3ba159fb6be6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cb19ebe993f78594180b3ba159fb6be6, type: 3}
 --- !u!1001 &1135828460739042725
 PrefabInstance:
@@ -8440,7 +8491,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3168817530352336341, guid: 6ceaebfd155555a4ea7950200fbf960e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6ceaebfd155555a4ea7950200fbf960e, type: 3}
 --- !u!1001 &4331132485207522962
 PrefabInstance:

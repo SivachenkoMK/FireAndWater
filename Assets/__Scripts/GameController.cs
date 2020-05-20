@@ -24,11 +24,22 @@ public class GameController : MonoBehaviour
     private GameObject LoseTable;
     private GameObject WinTable;
 
+    // Объекты - двери для персонажей.
+    public GameObject FirstPlayerDoor;
+    public GameObject SecondPlayerDoor;
+
+    // Теги игроков
+    private string FirstPlayerTag;
+    private string SecondPlayerTag;
+
     private void Awake()
     {
         FirstPlayer = Instantiate(FirstPlayerPrefab, FirstPlayerPosition, Quaternion.identity);
         SecondPlayer = Instantiate(SecondPlayerPrefab, SecondPlayerPosition, Quaternion.identity);
+        FirstPlayerTag = FirstPlayer.tag;
+        SecondPlayerTag = SecondPlayer.tag;
     }
+
     public void PauseGame()
     {
         Time.timeScale = 0;
@@ -41,18 +52,47 @@ public class GameController : MonoBehaviour
 
     public void EndGame()
     {
-        if (FirstPlayer == null || SecondPlayer == null)
+        if (SomeoneDied())
         {
             LoseGame();
         }
-        else
+        else if (AllDoorsAreOpened())
         {
             WinGame();
         }
     }
 
+    private bool SomeoneDied()
+    {
+        if (FirstPlayerDied() || SecondPlayerDied())
+            return true;
+        return false;
+    }
+
+    private bool FirstPlayerDied()
+    {
+        if (GameObject.FindGameObjectWithTag(FirstPlayerTag) == null)
+            return true;
+        return false;
+    }
+
+    private bool SecondPlayerDied()
+    {
+        if (GameObject.FindGameObjectWithTag(SecondPlayerTag) == null)
+            return true;
+        return false;
+    }
+
+    private bool AllDoorsAreOpened()
+    {
+        if (FirstPlayerDoor.GetComponent<DoorScript>().IsOpened && SecondPlayerDoor.GetComponent<DoorScript>().IsOpened)
+            return true;
+        return false;
+    }
+
     private void LoseGame()
     {
+        Debug.Log("Lost");
         DestroyAllPlayers();
         LoseTable = Instantiate(LoseTablePrefab, Vector3.zero, Quaternion.identity);
     }
@@ -69,5 +109,10 @@ public class GameController : MonoBehaviour
             Destroy(FirstPlayer);
         if (SecondPlayer != null)
             Destroy(SecondPlayer);
+    }
+
+    private void Update()
+    {
+        EndGame();
     }
 }
