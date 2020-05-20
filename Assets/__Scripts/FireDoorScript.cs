@@ -13,7 +13,7 @@ public class FireDoorScript : MonoBehaviour
 	   {
 	   	   closeDoor();
 	   }
-	   else //if(fireStonesCollected())
+	   else if(fireStonesCollected())
 	   {
 	      openDoor();
 	   }
@@ -33,8 +33,7 @@ public class FireDoorScript : MonoBehaviour
 	// Функция, которая определяет, собраны ли все FireStone
 	bool fireStonesCollected()
 	{
-		GameObject[] fireStones=GameObject.FindGameObjectsWithTag("FireStone");
-		if(fireStones==null)
+		if(GameObject.FindGameObjectWithTag("FireStone") == null)
 		return true;
 		else return false;
 	}

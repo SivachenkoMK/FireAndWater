@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlatformUnderFireDoorScript : MonoBehaviour
 {
-    public GameObject fireDoor;
+    public GameObject fireDoor; //Из этого объекта берём значение параметра fireObjectsOnPlatform, которое говорит, сколько объектов Fire находятся на платформе
 
+	// Методы, которые изменяют fireObjectsOnPlatform в зависимости от того, зашел ли Fire в триггер
 	private void OnTriggerEnter(Collider other)
 	{
 		if(other.CompareTag("Fire"))

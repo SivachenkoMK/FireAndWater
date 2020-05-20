@@ -5,9 +5,10 @@ using UnityEngine;
 public class Teleport : MonoBehaviour
 {
     [SerializeField]
-    private Vector3 Position;
+    public Vector3 Destination; 
+
     private void OnTriggerEnter(Collider other)
     {
-        other.gameObject.transform.position = Position;
+        other.gameObject.transform.position = Destination;
     }
 }
