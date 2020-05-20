@@ -92,7 +92,6 @@ public class GameController : MonoBehaviour
 
     private void LoseGame()
     {
-        Debug.Log("Lost");
         DestroyAllPlayers();
         LoseTable = Instantiate(LoseTablePrefab, Vector3.zero, Quaternion.identity);
     }

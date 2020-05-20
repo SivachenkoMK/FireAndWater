@@ -11,7 +11,7 @@ public class DoorScript : MonoBehaviour
 
 	private void OnTriggerEnter(Collider other)
 	{
-		if (other.CompareTag(TagOfNeededObject))
+		if (other.CompareTag(TagOfNeededObject) && StonesCollected())
 			IsOpened = true;
 	}
 
