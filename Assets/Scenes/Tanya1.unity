@@ -2990,7 +2990,8 @@ PrefabInstance:
         type: 3}
       propertyPath: LoseTablePrefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1713502842640288606, guid: 69feee5731ebe7943b41fde9c0d1604d,
+        type: 3}
     - target: {fileID: 2274577433325248912, guid: 62cf797a79a03cc4e828a5ecb7cc97f4,
         type: 3}
       propertyPath: FirstPlayerDoor
@@ -3011,6 +3012,23 @@ PrefabInstance:
       propertyPath: Scores
       value: 
       objectReference: {fileID: 608215183}
+    - target: {fileID: 2274577433325248912, guid: 62cf797a79a03cc4e828a5ecb7cc97f4,
+        type: 3}
+      propertyPath: WinTablePrefab
+      value: 
+      objectReference: {fileID: 8509023387619778593, guid: a8dd8135f9955e34dbbc4c1a34d1606d,
+        type: 3}
+    - target: {fileID: 2274577433325248912, guid: 62cf797a79a03cc4e828a5ecb7cc97f4,
+        type: 3}
+      propertyPath: PauseTablePrefab
+      value: 
+      objectReference: {fileID: 8942736674365241584, guid: f52eca2db28fe3f4fa8d25bb4c84cc08,
+        type: 3}
+    - target: {fileID: 2274577433325248912, guid: 62cf797a79a03cc4e828a5ecb7cc97f4,
+        type: 3}
+      propertyPath: _Canvas
+      value: 
+      objectReference: {fileID: 564686277}
     - target: {fileID: 3255873767470327427, guid: 62cf797a79a03cc4e828a5ecb7cc97f4,
         type: 3}
       propertyPath: m_Name

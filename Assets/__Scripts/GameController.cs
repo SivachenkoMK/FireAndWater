@@ -33,6 +33,8 @@ public class GameController : MonoBehaviour
     public GameObject FirstPlayerDoor;
     public GameObject SecondPlayerDoor;
 
+    public GameObject _Canvas;
+
     // Теги игроков
     private string FirstPlayerTag;
     private string SecondPlayerTag;
@@ -49,7 +51,8 @@ public class GameController : MonoBehaviour
 
     public void PauseGame()
     {
-        PauseTable = Instantiate(PauseTablePrefab, Vector3.zero, Quaternion.identity);
+        PauseTable = Instantiate(PauseTablePrefab, _Canvas.transform.position, Quaternion.identity);
+        PauseTable.transform.parent = _Canvas.transform;
         Time.timeScale = 0;
     }
 
@@ -103,14 +106,16 @@ public class GameController : MonoBehaviour
     {
         IsEnded = true;
         DestroyAllPlayers();
-        LoseTable = Instantiate(LoseTablePrefab, Vector3.zero, Quaternion.identity);
+        LoseTable = Instantiate(LoseTablePrefab, _Canvas.transform.position, Quaternion.identity);
+        LoseTable.transform.parent = _Canvas.transform;
     }
 
     private void WinGame()
     {
         IsEnded = true;
         DestroyAllPlayers();
-        WinTable = Instantiate(WinTablePrefab, Vector3.zero, Quaternion.identity);
+        WinTable = Instantiate(WinTablePrefab, _Canvas.transform.position, Quaternion.identity);
+        WinTable.transform.parent = _Canvas.transform;
     }
 
     private void DestroyAllPlayers()
