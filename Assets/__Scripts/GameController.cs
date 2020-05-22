@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 public class GameController : MonoBehaviour
 {
+    private bool IsEnded = false;
+
     // Начальные позиции игроков.
     public Vector3 FirstPlayerPosition;
     public Vector3 SecondPlayerPosition;
@@ -19,10 +22,12 @@ public class GameController : MonoBehaviour
     // Префабы отвечающие за таблицы, появляющиеся после игры
     public GameObject LoseTablePrefab;
     public GameObject WinTablePrefab;
+    public GameObject PauseTablePrefab;
 
     // Объекты - таблички после игры
     private GameObject LoseTable;
     private GameObject WinTable;
+    private GameObject PauseTable;
 
     // Объекты - двери для персонажей.
     public GameObject FirstPlayerDoor;
@@ -31,6 +36,8 @@ public class GameController : MonoBehaviour
     // Теги игроков
     private string FirstPlayerTag;
     private string SecondPlayerTag;
+
+    public int Level;
 
     private void Awake()
     {
@@ -42,11 +49,13 @@ public class GameController : MonoBehaviour
 
     public void PauseGame()
     {
+        PauseTable = Instantiate(PauseTablePrefab, Vector3.zero, Quaternion.identity);
         Time.timeScale = 0;
     }
 
     public void UnpauseGame()
     {
+        Destroy(PauseTable);
         Time.timeScale = 1;
     }
 
@@ -92,12 +101,14 @@ public class GameController : MonoBehaviour
 
     private void LoseGame()
     {
+        IsEnded = true;
         DestroyAllPlayers();
         LoseTable = Instantiate(LoseTablePrefab, Vector3.zero, Quaternion.identity);
     }
 
     private void WinGame()
     {
+        IsEnded = true;
         DestroyAllPlayers();
         WinTable = Instantiate(WinTablePrefab, Vector3.zero, Quaternion.identity);
     }
@@ -112,6 +123,7 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
-        EndGame();
+        if (!IsEnded)
+            EndGame();
     }
 }

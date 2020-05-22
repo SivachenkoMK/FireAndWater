@@ -2424,6 +2424,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimerText: {fileID: 227741087}
   TimeFromStart: 0
+--- !u!114 &608215183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608215179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19778faedcec32c41acaca8e5f4aac2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &633165775
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2989,6 +3001,16 @@ PrefabInstance:
       propertyPath: SecondPlayerDoor
       value: 
       objectReference: {fileID: 799209315}
+    - target: {fileID: 2274577433325248912, guid: 62cf797a79a03cc4e828a5ecb7cc97f4,
+        type: 3}
+      propertyPath: Level
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2274577433325248912, guid: 62cf797a79a03cc4e828a5ecb7cc97f4,
+        type: 3}
+      propertyPath: Scores
+      value: 
+      objectReference: {fileID: 608215183}
     - target: {fileID: 3255873767470327427, guid: 62cf797a79a03cc4e828a5ecb7cc97f4,
         type: 3}
       propertyPath: m_Name
