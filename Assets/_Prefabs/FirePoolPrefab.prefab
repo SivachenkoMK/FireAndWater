@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5604857242596864870}
   - component: {fileID: 7139875367891157537}
   - component: {fileID: 1492691384}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FirePoolPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}

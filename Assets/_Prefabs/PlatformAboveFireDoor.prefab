@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2915357338836811618}
   - component: {fileID: 2915357338836811617}
   - component: {fileID: 2915357338836811616}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PlatformAboveFireDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

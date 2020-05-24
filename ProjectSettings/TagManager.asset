@@ -7,9 +7,9 @@ TagManager:
   - Fire
   - Water
   - FireStone
-  - Obstacle
   - Trigger2
   - Trigger1
+  - WaterStone
   layers:
   - Default
   - TransparentFX
@@ -21,10 +21,10 @@ TagManager:
   - 
   - PostProcessing
   - ColliderForFirePool
-  - Fire
-  - Water
-  - 
-  - 
+  - FirePlayer
+  - WaterPlayer
+  - ColliderForWaterPool
+  - ColliderForPoolForBoth
   - 
   - 
   - 
