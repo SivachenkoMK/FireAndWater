@@ -103,7 +103,6 @@ GameObject:
   - component: {fileID: 966510263658989421}
   - component: {fileID: 5309930297606616930}
   - component: {fileID: 6906790630642767466}
-  - component: {fileID: 114048243296995578}
   m_Layer: 0
   m_Name: PlatformUnderFireDoor
   m_TagString: Untagged
@@ -184,17 +183,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114048243296995578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7481666834963960869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3033b43b24733ba498e161df4a36bb20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fireDoor: {fileID: 7948277918645235861, guid: f06f4da90134ded4989150af6d277b47,
-    type: 3}

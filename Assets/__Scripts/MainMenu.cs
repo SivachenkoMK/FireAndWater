@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
     }
     public void LoadLevel1()
     {
-        SceneManager.LoadScene("Tanya1");
+        SceneManager.LoadScene("Level_1");
       
     }
     public void LoadLobby()
