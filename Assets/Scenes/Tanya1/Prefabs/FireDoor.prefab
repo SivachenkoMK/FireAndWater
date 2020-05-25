@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 355915254256821213}
   - component: {fileID: 4623338125246731218}
   - component: {fileID: 6214991139905368794}
-  - component: {fileID: 4731239907419461105}
+  - component: {fileID: 1818973832}
   m_Layer: 0
   m_Name: FireDoor
   m_TagString: Untagged
@@ -87,12 +87,12 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7948277918645235861}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4731239907419461105
+--- !u!114 &1818973832
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101,7 +101,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7948277918645235861}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13bbc79f9716af3499beabff0d914181, type: 3}
+  m_Script: {fileID: 11500000, guid: 7808b8dd52b53c740bff812d2d44c176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireObjectsOnPlatform: 0
+  IsOpened: 0
+  TagOfNeededObject: Fire
