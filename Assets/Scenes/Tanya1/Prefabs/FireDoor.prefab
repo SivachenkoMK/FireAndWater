@@ -101,7 +101,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7948277918645235861}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13bbc79f9716af3499beabff0d914181, type: 3}
+  m_Script: {fileID: 11500000, guid: 7808b8dd52b53c740bff812d2d44c176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireObjectsOnPlatform: 0
+  IsOpened: 0
+  TagOfNeededObject: Fire

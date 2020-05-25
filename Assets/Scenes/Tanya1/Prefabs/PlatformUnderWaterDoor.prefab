@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7361546805525874058}
   - component: {fileID: 2517623651454219653}
   - component: {fileID: 3790084045494588557}
-  - component: {fileID: 3168817530352336341}
   m_Layer: 0
   m_Name: PlatformUnderWaterDoor
   m_TagString: Untagged
@@ -93,20 +92,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3168817530352336341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 906618251377170114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42de1250a42406f4a80897738e3f7254, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waterDoor: {fileID: 7829491842190315444, guid: cb19ebe993f78594180b3ba159fb6be6,
-    type: 3}
 --- !u!1 &7761710605318178595
 GameObject:
   m_ObjectHideFlags: 0

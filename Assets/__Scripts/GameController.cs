@@ -51,6 +51,8 @@ public class GameController : MonoBehaviour
 
     public void PauseGame()
     {
+        if (PauseTable != null && PauseTable.activeSelf)
+            return;
         PauseTable = Instantiate(PauseTablePrefab, _Canvas.transform.position, Quaternion.identity);
         PauseTable.transform.parent = _Canvas.transform;
         Time.timeScale = 0;
@@ -58,7 +60,7 @@ public class GameController : MonoBehaviour
 
     public void UnpauseGame()
     {
-        Destroy(PauseTable);
+        Destroy(PauseTable, 1);
         Time.timeScale = 1;
     }
 
