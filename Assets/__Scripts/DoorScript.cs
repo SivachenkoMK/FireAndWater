@@ -5,7 +5,7 @@ using UnityEngine;
 public class DoorScript : MonoBehaviour
 {
     public bool IsOpened;
-
+	
 	[SerializeField]
     private string TagOfNeededObject;
 
@@ -18,7 +18,7 @@ public class DoorScript : MonoBehaviour
 	private void OnTriggerExit(Collider other)
 	{
 		if (other.CompareTag(TagOfNeededObject))
-			IsOpened = false; ;
+			IsOpened = false; 
 	}
 
 	private void Update()
