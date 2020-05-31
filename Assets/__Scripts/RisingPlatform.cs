@@ -9,7 +9,7 @@ public class RisingPlatform : MonoBehaviour
   // Переменные, в которых хранятся верхняя и нижняя позиции платформы
   public Vector3 upPosition;
   public Vector3 downPosition;
-	
+  
 	// В зависимости от параметра objectsOnButtons вызываем функции для поднятия или спуска платформы
 	void Update()
 	{
@@ -24,13 +24,12 @@ public class RisingPlatform : MonoBehaviour
 	// Функции, в которых описываем,как происходит поднятие или спуск платформы(пока мы не придумали, как сделать анимацию, будем просто активировать и деактивировать коллайдер и меш)
 	private void RaisePlatform()
 	{
-		this.GetComponent<MeshRenderer>().enabled=true;
 		this.GetComponent<Collider>().enabled=true;
+		this.GetComponent<MeshRenderer>().enabled=true;
 	}
-
 	private void LowerPlatform()
 	{
-		this.GetComponent<MeshRenderer>().enabled=false;
 		this.GetComponent<Collider>().enabled=false;
+		this.GetComponent<MeshRenderer>().enabled=false;
 	}
 }
