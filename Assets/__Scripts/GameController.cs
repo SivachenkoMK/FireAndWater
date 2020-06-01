@@ -69,10 +69,14 @@ public class GameController : MonoBehaviour
         if (SomeoneDied())
         {
             LoseGame();
+            this.gameObject.GetComponent<Timer>().IsEnded = true;
+            GameObject.Find("PauseButton").SetActive(false);
         }
         else if (AllDoorsAreOpened())
         {
+            this.gameObject.GetComponent<Timer>().IsEnded = true;
             WinGame();
+            GameObject.Find("PauseButton").SetActive(false);
         }
     }
 

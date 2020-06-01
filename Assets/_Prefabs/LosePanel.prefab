@@ -485,7 +485,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1713502842640288602}
-        m_MethodName: LoadLevel1
+        m_MethodName: LoadThisLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
